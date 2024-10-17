@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // or your desired target
+    "outDir": "./dist",
+    "module": "commonjs", // or "esnext"
+    "jsx": "react", // or "react-jsx" for React 17+
+    "strict": true, // or false depending on your needs
+    "esModuleInterop": true, // allows default imports from modules with no default export
+    "skipLibCheck": true, // skip type checking for declaration files
+    "declaration": true,
+    "lib": ["DOM", "ES2015"]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "react-dynamic-import-retry",
+  "version": "1.0.0",
+  "description": "A React utility for dynamically importing components with retry logic.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [
+    "react",
+    "dynamic-import",
+    "retry",
+    "lazy-loading"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/react-dynamic-import-retry.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/react-dynamic-import-retry/issues"
+  },
+  "homepage": "https://github.com/yourusername/react-dynamic-import-retry#readme",
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "jest": "^27.0.0",
+    "@types/react": "^17.0.0",
+    "@types/jest": "^27.0.0"
+  }
+}
