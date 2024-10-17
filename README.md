@@ -24,18 +24,16 @@ npm install react-dynamic-import-retry
 
 ## Usage
 
-
-
 ### Global Configuration
 
 You can set the default settings for your project:
 
 ```javascript
-import { setRetrySettings } from 'react-dynamic-import-retry';
+import { setRetrySettings } from "react-dynamic-import-retry";
 
 setRetrySettings({
-  maxRetryCount: 10,  // Maximum 10 attempts to load
-  retryDelayMs: 1000  // 1000 milliseconds delay between each attempt
+  maxRetryCount: 10, // Maximum 10 attempts to load
+  retryDelayMs: 1000, // 1000 milliseconds delay between each attempt
 });
 ```
 
@@ -44,19 +42,22 @@ setRetrySettings({
 You can also configure retries for individual imports directly when calling the `retryDynamicImport` function:
 
 ```javascript
-import { retryDynamicImport } from 'react-dynamic-import-retry';
+import { retryDynamicImport } from "react-dynamic-import-retry";
 
 const MyComponentWithCustomRetry = retryDynamicImport(
-  () => import('./MyComponent'),
-  5,    // Maximum 5 attempts to load
-  2000   // 2000 milliseconds delay between each attempt
+  () => import("./MyComponent"),
+  5, // Maximum 5 attempts to load
+  2000 // 2000 milliseconds delay between each attempt
 );
 ```
 
 ## Props
 
-| Prop               | Type         | Required | Description                                     |
-|--------------------|--------------|----------|-------------------------------------------------|
-| `maxRetryCount`    | `number`     | No       | Maximum number of attempts to load the component. Default is 15. |
-| `retryDelayMs`     | `number`     | No       | Delay in milliseconds between each retry attempt. Default is 500. |
+| Prop            | Type     | Required | Description                                                       |
+| --------------- | -------- | -------- | ----------------------------------------------------------------- |
+| `maxRetryCount` | `number` | No       | Maximum number of attempts to load the component. Default is 15.  |
+| `retryDelayMs`  | `number` | No       | Delay in milliseconds between each retry attempt. Default is 500. |
 
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
